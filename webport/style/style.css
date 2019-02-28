@@ -30,8 +30,7 @@ body {
 }
 
 #section{
-
-  display: flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
@@ -39,7 +38,9 @@ body {
 }
 
 #section2{
-	padding-top: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 100vh;
 }
@@ -64,6 +65,11 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Roboto-Regular';
 }
 
 .nav {
@@ -145,29 +151,7 @@ body {
   height: 100%;
 }
 
-.cursor
-{
-  opacity: 0.2;
-  width: 1000px;
-  height: 1000px;
-  position  : absolute;
-  background: -webkit-radial-gradient(rgba(255,255,255,0.7), rgba(200,200,200,0), rgba(150,150,150,0)); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(rgba(255,255,255,0.6), rgba(200,200,200,0), rgba(150,150,150,0)); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(rgba(255,255,255,0.2), rgba(200,200,200,0), rgba(150,150,150,0)); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(rgba(255,255,255,0.4), rgba(200,200,200,0), rgba(150,150,150,0)); /* Standard syntax */
-}
-
-
 @media (max-width:600px) {
-
-  #section > span {
-    font-size: 1.3em;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.25em;
-  }
-
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -212,5 +196,3 @@ body {
     overflow-y: auto;
   }
 }
-
-
